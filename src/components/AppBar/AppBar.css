@@ -1,0 +1,56 @@
+.navBar {
+    position: flex;
+    height: 80px;
+    left: 1px;
+    right: 0px;
+    top: 0px;
+}
+.search-form {
+    border-radius: 30px 30px 30px 30px;
+    /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
+}
+.item-name {
+    position: static;
+height: 32px;
+left: 0px;
+right: 0px;
+top: calc(50% - 32px/2);
+
+/* Inter / Body Large */
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 158%;
+/* identical to box height, or 32px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.0075em;
+
+/* Blue / 70 */
+
+color: #2264D1;
+}
+.sign-in{
+
+
+/* Quicksand / 20 sp • H6 */
+
+font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 100%;
+/* or 30px */
+
+display: flex;
+
+text-align: center;
+letter-spacing: 0.0075em;
+
+/* Blue / 70 */
+
+color: #2264D1;
+}

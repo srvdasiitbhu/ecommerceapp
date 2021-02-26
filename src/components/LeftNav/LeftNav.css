@@ -1,0 +1,47 @@
+.btn--department {
+  display: inline-block;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  color: #2264d1;
+}
+.list {
+  padding: 0;
+  border-bottom: "1px solid ${theme.palette.divider}";
+}
+.leftnav-arrow {
+  
+  width: 12px;
+  height: 7.41px;
+  left: calc(50% - 12px / 2 + 9.71px);
+  top: calc(50% - 7.41px / 2 - 2.59px);
+  transform: rotate(0deg);
+}
+.leftnav-categories {
+    position: absolute;
+height: 24px;
+left: 48px;
+right: 8px;
+top: 6px;
+
+/* Inter / Body Default */
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.0275em;
+
+/* Gray / 100 */
+
+color: #19191D;
+}

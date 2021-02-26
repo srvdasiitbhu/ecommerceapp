@@ -1,0 +1,7 @@
+.container {
+    height: 'calc(100% + 32px)';
+}
+.column {
+    display: 'flex';
+    flex-direction: 'column';
+  }
