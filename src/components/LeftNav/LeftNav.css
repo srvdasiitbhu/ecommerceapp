@@ -9,6 +9,9 @@
   text-align: center;
   color: #2264d1;
 }
+.btn-department {
+  align-items: flex-end;
+}
 .list {
   padding: 0;
   border-bottom: "1px solid ${theme.palette.divider}";
@@ -33,7 +36,7 @@ top: 6px;
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
+font-size: 16;
 line-height: 150%;
 /* identical to box height, or 24px */
 
