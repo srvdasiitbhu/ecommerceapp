@@ -1,15 +1,10 @@
 import React from "react";
-import {
-  Collapse,
-  IconButton,
-  List,
-  ListItem
-} from "@material-ui/core";
+import { Collapse, IconButton, List, ListItem } from "@material-ui/core";
 import { ExpandMore } from "@material-ui/icons";
-import "./ExpandedFilters.css";
+import "../ExpandedFilters/ExpandedFilters.css";
 import "../LeftNav/LeftNav.css";
 
-const ExpandedFilters = () => {
+const YearFilter = () => {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -20,8 +15,8 @@ const ExpandedFilters = () => {
     <div>
       <List className="expand">
         <ListItem button onClick={handleClick}>
-          <span className="collapsedfilters" style={{ paddingRight: 150 }}>
-            Expanded Filters
+          <span className="collapsedfilters" style={{ paddingRight: 115 }}>
+            Year of manufacturing
           </span>
           <IconButton
             size="small"
@@ -35,44 +30,65 @@ const ExpandedFilters = () => {
       <Collapse in={open} timeout="auto" unmountOnExit className="expand">
         <form style={{ paddingLeft: 20 }}>
           <label>
-            <input name="Recommended" type="checkbox" />
+            <input name="1954" type="checkbox" />
             <span className="filters" style={{ paddingLeft: 10 }}>
-              Recommended
+              1954
             </span>
           </label>
           <br />
           <label>
-            <input name="Recently Added" type="checkbox" />
+            <input name="1955" type="checkbox" />
             <span className="filters" style={{ paddingLeft: 10 }}>
-              Recently Added
+              1955
             </span>
           </label>
           <br />
           <label>
-            <input name="Expiring Soon" type="checkbox" />
+            <input name="1956" type="checkbox" />
             <span className="filters" style={{ paddingLeft: 10 }}>
-              Expiring Soon
+              1956
             </span>
           </label>
           <br />
           <label>
-            <input name="Most Rated" type="checkbox" />
+            <input name="1957" type="checkbox" />
             <span className="filters" style={{ paddingLeft: 10 }}>
-              Most Rated
+              1957
             </span>
           </label>
           <br />
           <label>
-            <input name="Price: Low -{'>'} High" type="checkbox" />
+            <input name="1958" type="checkbox" />
             <span className="filters" style={{ paddingLeft: 10 }}>
-              Price: Low -{">"} High
+              1958
             </span>
           </label>
           <br />
           <label>
-            <input name="Price: High -{'>'} Low" type="checkbox" />
+            <input name="1959" type="checkbox" />
             <span className="filters" style={{ paddingLeft: 10 }}>
-              Price: High -{">"} Low
+              1959
+            </span>
+          </label>
+          <br />
+          <label>
+            <input name="1960" type="checkbox" />
+            <span className="filters" style={{ paddingLeft: 10 }}>
+              1960
+            </span>
+          </label>
+          <br />
+          <label>
+            <input name="1961" type="checkbox" />
+            <span className="filters" style={{ paddingLeft: 10 }}>
+              1961
+            </span>
+          </label>
+          <br />
+          <label>
+            <input name="1962-2020" type="checkbox" />
+            <span className="filters" style={{ paddingLeft: 10 }}>
+              1962-2020
             </span>
           </label>
           <br />
@@ -82,4 +98,4 @@ const ExpandedFilters = () => {
   );
 };
 
-export default React.memo(ExpandedFilters);
+export default React.memo(YearFilter);

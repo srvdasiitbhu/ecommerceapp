@@ -54,11 +54,27 @@
   font-weight: normal;
   font-size: 16;
   line-height: 150%;
-  color: #19191D;
+  color: #19191d;
 }
 .collapsedfilters {
   display: flex;
+  height: 24px;
+  left: 48px;
+  right: 8px;
+  top: 6px;
+
+  /* Inter / Body Default */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
 }
 .downarrow {
-  color: #2264D1;
+  color: #2264d1;
+}
+.collapse {
+  background: #f7f7fa;
+  border-radius: 4px;
 }

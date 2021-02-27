@@ -9,6 +9,8 @@ import {
 } from "@material-ui/core";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import { ExpandMore } from "@material-ui/icons";
+import ExpandedFilters from "../ExpandedFilters/ExpandedFilters";
+import YearFilter from "../YearFilter/YearFilter";
 import "./LeftNav.css";
 
 const LeftNav = () => {
@@ -215,7 +217,7 @@ const LeftNav = () => {
       </List>
       <List>
         <ListItem button>
-          <span className="leftnav-categories collapsedfilters">
+          <span className="collapsedfilters" style={{ paddingRight: 150 }}>
             Collapsed Filters
           </span>
           <IconButton
@@ -228,6 +230,9 @@ const LeftNav = () => {
           </IconButton>
         </ListItem>
       </List>
+      <ExpandedFilters />
+      <br />
+      <YearFilter />
     </div>
   );
 };

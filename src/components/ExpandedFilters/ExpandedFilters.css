@@ -1,0 +1,13 @@
+.expand {
+  background: #f7f7fa;
+  border-radius: 4px;
+}
+.filters {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.0275em;
+  color: #19191d;
+}
