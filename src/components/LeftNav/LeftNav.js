@@ -4,12 +4,11 @@ import {
   IconButton,
   List,
   ListItem,
-  ListItemText,
   ListItemIcon,
   Typography,
 } from "@material-ui/core";
 import FilterListIcon from "@material-ui/icons/FilterList";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import { ExpandMore } from "@material-ui/icons";
 import "./LeftNav.css";
 
 const LeftNav = () => {
@@ -29,140 +28,204 @@ const LeftNav = () => {
     setOpen2(!open2);
   };
   const handleClick3 = () => {
-    setOpen(!open3);
+    setOpen3(!open3);
   };
   return (
     <div>
       <div class="btn-department">
-        <button type="button" className="btn btn-outline-primary">
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          style={{ paddingLeft: 60, paddingRight: 60 }}
+        >
           <FilterListIcon />
           <Typography className="btn--department">Departments</Typography>
         </button>
       </div>
       <List>
         <ListItem button onClick={handleClick}>
-          <ArrowForwardIosIcon
-            // className={clsx(classes.expand, expanded && classes.expandOpen)}
-            className="leftnav-arrow"
-            fontSize="small"
+          <span className="leftnav-categories collapsedfilters">
+            All Categories
+          </span>
+          <IconButton
+            size="small"
             aria-expanded={expanded}
             aria-label="show more"
-          />
-          <Typography className="leftnav-categories">All Categories</Typography>
+            style={{ transform: "rotate(270deg)" }}
+          >
+            <ExpandMore className="downarrow" />
+          </IconButton>
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            <ListItem button onClick={handleClick1}>
-              <ListItemIcon />
-              <ArrowForwardIosIcon
-                // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                className="leftnav-arrow"
-                fontSize="small"
-                aria-expanded={expanded}
-                aria-label="show more"
-              />
-              <Typography>Electronics</Typography>
-            </ListItem>
+            <div style={{ paddingLeft: 10 }}>
+              <ListItem button onClick={handleClick1}>
+                <span className="leftnav-categories collapsedfilters">
+                  Electronics
+                </span>
+                <IconButton
+                  size="small"
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                  style={{ transform: "rotate(270deg)" }}
+                >
+                  <ExpandMore className="downarrow" />
+                </IconButton>
+              </ListItem>
+            </div>
             <Collapse in={open1} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
-                <ListItem button onClick={handleClick}>
-                  <ListItemIcon />
-                  <ListItemIcon />
-                  <ArrowForwardIosIcon
-                    // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                    className="leftnav-arrow"
-                    fontSize="small"
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                  />
-                  <Typography>Cell Phones & Smartphones</Typography>
-                </ListItem>
-              </List>
-            </Collapse>
-            <Collapse in={open} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                <ListItem button onClick={handleClick1}>
-                  <ListItemIcon />
-                  <ArrowForwardIosIcon
-                    // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                    className="leftnav-arrow"
-                    fontSize="small"
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                  />
-                  <Typography>Business & Industrial</Typography>
-                </ListItem>
-                <Collapse in={open} timeout="auto" unmountOnExit>
+                <div style={{ paddingLeft: 20 }}>
+                  <ListItem button onClick={handleClick3}>
+                    <span className="leftnav-categories collapsedfilters">
+                      Cell Phones & Smartphones
+                    </span>
+                    <IconButton
+                      size="small"
+                      aria-expanded={expanded}
+                      aria-label="show more"
+                      style={{ transform: "rotate(270deg)" }}
+                    >
+                      <ExpandMore className="downarrow" />
+                    </IconButton>
+                  </ListItem>
+                </div>
+                <Collapse in={open3} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
-                    <ListItem button onClick={handleClick1}>
+                    <ListItem button>
                       <ListItemIcon />
-                      <ArrowForwardIosIcon
-                        // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                        className="leftnav-arrow"
-                        fontSize="small"
-                        aria-expanded={expanded}
-                        aria-label="show more"
-                      />
-                      <Typography>Computers</Typography>
+                      <span className="leftnav-items">
+                        Cell Phone Accessories
+                      </span>
                     </ListItem>
-                    <Collapse in={open} timeout="auto" unmountOnExit>
-                      <List component="div" disablePadding>
-                        <ListItem button onClick={handleClick1}>
-                          <ListItemIcon />
-                          <ArrowForwardIosIcon
-                            // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                            className="leftnav-arrow"
-                            fontSize="small"
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                          />
-                          <Typography>Consumer Electronics</Typography>
-                        </ListItem>
-                        <Collapse in={open} timeout="auto" unmountOnExit>
-                          <List component="div" disablePadding>
-                            <ListItem button onClick={handleClick1}>
-                              <ListItemIcon />
-                              <ArrowForwardIosIcon
-                                // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                                className="leftnav-arrow"
-                                fontSize="small"
-                                aria-expanded={expanded}
-                                aria-label="show more"
-                              />
-                              <Typography>Home & Garden</Typography>
-                            </ListItem>
-                            <Collapse in={open} timeout="auto" unmountOnExit>
-                              <List component="div" disablePadding>
-                                <ListItem button onClick={handleClick1}>
-                                  <ListItemIcon />
-                                  <ArrowForwardIosIcon
-                                    // className={clsx(classes.expand, expanded && classes.expandOpen)}
-                                    className="leftnav-arrow"
-                                    fontSize="small"
-                                    aria-expanded={expanded}
-                                    aria-label="show more"
-                                  />
-                                  <Typography>Collectibles</Typography>
-                                </ListItem>
-                              </List>
-                            </Collapse>
-                          </List>
-                        </Collapse>
-                      </List>
-                    </Collapse>
+                  </List>
+                  <List component="div" disablePadding>
+                    <ListItem button>
+                      <ListItemIcon />
+                      <span className="leftnav-items">Applications</span>
+                    </ListItem>
+                  </List>
+                  <List component="div" disablePadding>
+                    <ListItem button>
+                      <ListItemIcon />
+                      <span className="leftnav-items">Smart Watches</span>
+                    </ListItem>
+                  </List>
+                  <List component="div" disablePadding>
+                    <ListItem button>
+                      <ListItemIcon />
+                      <span className="leftnav-items">Cell Phone Gadgets</span>
+                    </ListItem>
                   </List>
                 </Collapse>
               </List>
             </Collapse>
           </List>
+
+          <List component="div" disablePadding>
+            <div style={{ paddingLeft: 10 }}>
+              <ListItem button onClick={handleClick1}>
+                <span className="leftnav-categories collapsedfilters">
+                  Business & Industrial
+                </span>
+                <IconButton
+                  size="small"
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                  style={{ transform: "rotate(270deg)" }}
+                >
+                  <ExpandMore className="downarrow" />
+                </IconButton>
+              </ListItem>
+            </div>
+          </List>
+
+          <List component="div" disablePadding>
+            <div style={{ paddingLeft: 10 }}>
+              <ListItem button onClick={handleClick1}>
+                <span className="leftnav-categories collapsedfilters">
+                  Computers
+                </span>
+                <IconButton
+                  size="small"
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                  style={{ transform: "rotate(270deg)" }}
+                >
+                  <ExpandMore className="downarrow" />
+                </IconButton>
+              </ListItem>
+            </div>
+          </List>
+
+          <List component="div" disablePadding>
+            <div style={{ paddingLeft: 10 }}>
+              <ListItem button onClick={handleClick1}>
+                <span className="leftnav-categories collapsedfilters">
+                  Consumer Electronics
+                </span>
+                <IconButton
+                  size="small"
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                  style={{ transform: "rotate(270deg)" }}
+                >
+                  <ExpandMore className="downarrow" />
+                </IconButton>
+              </ListItem>
+            </div>
+          </List>
+
+          <List component="div" disablePadding>
+            <div style={{ paddingLeft: 10 }}>
+              <ListItem button onClick={handleClick1}>
+                <span className="leftnav-categories collapsedfilters">
+                  Home & Garden
+                </span>
+                <IconButton
+                  size="small"
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                  style={{ transform: "rotate(270deg)" }}
+                >
+                  <ExpandMore className="downarrow" />
+                </IconButton>
+              </ListItem>
+            </div>
+          </List>
+
+          <List component="div" disablePadding>
+            <div style={{ paddingLeft: 10 }}>
+              <ListItem button onClick={handleClick1}>
+                <span className="leftnav-categories collapsedfilters">
+                  Collectibles
+                </span>
+                <IconButton
+                  size="small"
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                  style={{ transform: "rotate(270deg)" }}
+                >
+                  <ExpandMore className="downarrow" />
+                </IconButton>
+              </ListItem>
+            </div>
+          </List>
         </Collapse>
       </List>
       <List>
-        <ListItem button onClick={handleClick}>
-          <Typography className="leftnav-categories">
+        <ListItem button>
+          <span className="leftnav-categories collapsedfilters">
             Collapsed Filters
-          </Typography>
-          <IconButton aria-expanded={expanded} aria-label="show more" />
+          </span>
+          <IconButton
+            size="small"
+            aria-expanded={expanded}
+            aria-label="show more"
+            style={{ transform: "rotate(0deg)" }}
+          >
+            <ExpandMore className="downarrow" />
+          </IconButton>
         </ListItem>
       </List>
     </div>
