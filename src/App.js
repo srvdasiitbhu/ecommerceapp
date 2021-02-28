@@ -1,7 +1,7 @@
 import React from "react";
 import AppBar from "./components/AppBar/AppBar";
 import LeftNav from "./components/LeftNav/LeftNav";
-import { Grid, Paper } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import ProductList from "./components/ProductList/ProductList";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "./App.css";

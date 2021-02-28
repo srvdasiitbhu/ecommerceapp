@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import StarRateRoundedIcon from "@material-ui/icons/StarRateRounded";
 import StarHalfRoundedIcon from "@material-ui/icons/StarHalfRounded";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import Chip from "@material-ui/core/Chip";
+import InputLabel from "@material-ui/core/InputLabel";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
 import Typewriter from "./Typewriter.png";
 import Shoes from "./Shoes.png";
 import Cat from "./Cat.png";
@@ -17,10 +21,26 @@ import Brush from "./Brush.png";
 import "./ProductList.css";
 
 const ProductList = () => {
-  const imageRef = React.createRef();
   return (
     <div>
       <div class="card" style={{ width: 952 }}>
+        <br />
+        <FormControl variant="outlined" style={{ paddingRight: 800 }}>
+          <InputLabel htmlFor="outlined-age-native-simple">SORT BY</InputLabel>
+          <Select
+            native
+            label="SORT BY"
+            inputProps={{
+              name: "sortby",
+              id: "outlined-age-native-simple",
+            }}
+          >
+            <option aria-label="None" value="" />
+            <option>Newest first</option>
+            <option>Oldest first</option>
+          </Select>
+        </FormControl>
+        <br />
         <div style={{ display: "inline-flex" }}>
           <div class="card" style={{ width: 238 }}>
             <img
@@ -142,7 +162,11 @@ const ProductList = () => {
             <div class="card-body">
               <p class="description">Plastic useless plugs and tubes.</p>
               <br />
-              <span className="price">$12.48</span>
+              <div style={{ display: "flex" }}>
+                <span className="price">$12.48</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Chip variant="outlined" color="primary" label="50% OFF" />
+              </div>
               <span className="details">Eligible for shipping</span>
             </div>
             <div style={{ display: "inline-block" }}>
@@ -398,7 +422,11 @@ const ProductList = () => {
                 nails
               </p>
               <br />
-              <span className="price">$1.25</span>
+              <div style={{ display: "flex" }}>
+                <span className="price">$1.25</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <Chip variant="outlined" color="secondary" label="Cool deal!" />
+              </div>
               <span className="details">Eligible for shipping</span>
             </div>
             <div style={{ display: "inline-block" }}>

@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react"
-import "./AppBar.css"
-import { Button, Typography } from "@material-ui/core"
-import Logo from "./Logo.png"
+import React from "react";
+import "./AppBar.css";
+import { Typography } from "@material-ui/core";
+import SearchIcon from "@material-ui/icons/Search";
+import Logo from "./Logo.png";
+import User from "./User.png";
 
 const AppBar = () => {
   return (
@@ -15,26 +17,32 @@ const AppBar = () => {
             placeholder="Search"
             aria-label="Search"
             aria-describedby="search-addon"
+            style={{ width: 350 }}
           />
           <span className="input-group-text border-0" id="search-addon">
-            <i className="fas fa-search"></i>
+            <i className="fas fa-search">
+              <SearchIcon />
+            </i>
           </span>
-          &nbsp;&nbsp;
         </div>
         &nbsp;&nbsp;
-        <Typography className="item-name">Consumer Electronics</Typography>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        <Typography
+          className="item-name"
+          style={{ paddingRight: 70, paddingLeft: 50 }}
+        >
+          Consumer Electronics
+        </Typography>
         <div>
           <button type="button" className="btn btn-outline-primary">
-          <Typography>Sign in</Typography>
+            <Typography className="sign-in">Sign in</Typography>
           </button>
           &nbsp; &nbsp;
           <button type="button" className="btn btn-outline-primary">
-          <Typography>My cart</Typography>
+            <Typography className="sign-in">My cart</Typography>
           </button>
         </div>
-        &nbsp;&nbsp;
       </form>
+      <img src={User} />
     </nav>
   );
 };

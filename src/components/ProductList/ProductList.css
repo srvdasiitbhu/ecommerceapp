@@ -83,4 +83,41 @@
 
   color: #5e6366;
 }
+.formControl {
+  min-width: 120;
+}
+.discount {
+  left: 10px;
+  right: 10px;
+  top: 4px;
+  bottom: 4px;
 
+  /* Roboto / Caption */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  /* Green / 70 */
+
+  color: #37833b;
+}
+.chip {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  /* Green / 5 */
+
+  background: #ecf7ed;
+  border-radius: 4px;
+}
