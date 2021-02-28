@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
+import StarRateRoundedIcon from "@material-ui/icons/StarRateRounded";
+import StarHalfRoundedIcon from "@material-ui/icons/StarHalfRounded";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import Typewriter from "./Typewriter.png";
 import Shoes from "./Shoes.png";
 import Cat from "./Cat.png";
@@ -34,10 +33,33 @@ const ProductList = () => {
               <p class="description">
                 Vintage Typewriter to post awesome stories.
               </p>
+              <br />
               <span className="price">$49.50</span>
               <span className="details">Eligible for shipping</span>
             </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.05
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
+            </div>
           </div>
+
           <div class="card" style={{ width: 238 }}>
             <img
               class="card-img-top"
@@ -47,8 +69,31 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">Lee Pucker Design.</p>
-              <span className="price">$49.50</span>
+              <br />
+              <br />
+              <span className="price">$13.95</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.56
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -62,8 +107,29 @@ const ProductList = () => {
               <p class="description">
                 Time saving kitten to save months on development.
               </p>
-              <span className="price">$49.50</span>
+              <span className="price">$128.99</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.87
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -75,8 +141,30 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">Plastic useless plugs and tubes.</p>
-              <span className="price">$49.50</span>
+              <br />
+              <span className="price">$12.48</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.99
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -90,8 +178,30 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">Creativity stimulating lotion.</p>
-              <span className="price">$49.50</span>
+              <br />
+              <span className="price">$12.49</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.99
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -105,8 +215,29 @@ const ProductList = () => {
               <p class="description">
                 Prototyping items to create a lot if useless things...
               </p>
-              <span className="price">$49.50</span>
+              <span className="price">$128.99</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.87
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -118,8 +249,30 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">John Von Ebalkin SPRINGS</p>
-              <span className="price">$49.50</span>
+              <br />
+              <span className="price">$13.95</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.56
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -131,8 +284,31 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">Envelopes</p>
-              <span className="price">$49.50</span>
+              <br />
+              <br />
+              <span className="price">$9.50</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.77
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -146,8 +322,31 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">Professional teadrinking set</p>
-              <span className="price">$49.50</span>
+              <br />
+              <br />
+              <span className="price">$128.99</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.87
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -159,8 +358,31 @@ const ProductList = () => {
             />
             <div class="card-body">
               <p class="description">One string Bonsai description</p>
-              <span className="price">$49.50</span>
+              <br />
+              <br />
+              <span className="price">$11.68</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.99
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -175,8 +397,30 @@ const ProductList = () => {
                 Simply best item in town to shine bright with your Nine inch
                 nails
               </p>
-              <span className="price">$49.50</span>
+              <br />
+              <span className="price">$1.25</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.77
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
           <div class="card" style={{ width: 238 }}>
@@ -191,8 +435,29 @@ const ProductList = () => {
                 KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is
                 here!
               </p>
-              <span className="price">$49.50</span>
+              <span className="price">$23.25</span>
               <span className="details">Eligible for shipping</span>
+            </div>
+            <div style={{ display: "inline-block" }}>
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarRateRoundedIcon className="starrating" />
+              <StarHalfRoundedIcon className="starrating" fontSize="small" />
+              <span className="rating" style={{ paddingLeft: 5 }}>
+                4.56
+              </span>
+              &nbsp;
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                style={{ paddingLeft: 4, paddingRight: 8 }}
+              >
+                <span>
+                  <FavoriteBorderIcon />
+                  Watch
+                </span>
+              </button>
             </div>
           </div>
         </div>

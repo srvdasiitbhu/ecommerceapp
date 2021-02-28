@@ -57,3 +57,30 @@
 
   color: #787885;
 }
+.starrating {
+  /* Orange / 60 */
+
+  color: #fb8200;
+}
+.rating {
+  left: 80px;
+  right: 13px;
+  top: 15.62%;
+  bottom: 15.62%;
+
+  /* Roboto / Subtitle 2 */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 0.1px;
+
+  /* Gray · 80% */
+
+  color: #5e6366;
+}
+
