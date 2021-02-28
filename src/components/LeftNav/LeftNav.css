@@ -12,18 +12,7 @@
 .btn-department {
   align-items: flex-end;
 }
-.list {
-  padding: 0;
-  border-bottom: "1px solid ${theme.palette.divider}";
-}
-.leftnav-arrow {
-  width: 12px;
-  height: 7.41px;
-  left: calc(50% - 12px / 2 + 9.71px);
-  top: calc(50% - 7.41px / 2 - 2.59px);
-  transform: rotate(0deg);
-  color: #2264d1;
-}
+
 .leftnav-categories {
   position: absolute;
   height: 24px;
@@ -74,8 +63,3 @@
 .downarrow {
   color: #2264d1;
 }
-.collapse {
-  background: #f7f7fa;
-  border-radius: 4px;
-}
-
