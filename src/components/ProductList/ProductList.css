@@ -1,3 +1,59 @@
 .root {
-  min-width: 1000;
+  min-width: 345;
+}
+.description {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  letter-spacing: 0.0275em;
+
+  color: #19191d;
+}
+.price {
+  height: 36px;
+  left: 16px;
+  right: 16px;
+  bottom: 102px;
+
+  /* Inter / 24 sp • H5 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+  display: flex;
+  align-items: center;
+
+  /* Dark Color */
+
+  color: rgba(0, 0, 0, 0.87);
+}
+.details {
+  height: 41px;
+  left: 16px;
+  right: 16px;
+  bottom: 53px;
+
+  /* Inter / Body Small */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 143%;
+  /* or 20px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.018em;
+
+  /* Gray / 50 */
+
+  color: #787885;
 }
