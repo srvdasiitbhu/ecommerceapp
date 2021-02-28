@@ -1,7 +1,12 @@
 .container {
-    height: 'calc(100% + 32px)';
+  height: "calc(100% + 32px)";
 }
 .column {
-    display: 'flex';
-    flex-direction: 'column';
-  }
+  display: "flex";
+  flex-direction: "column";
+}
+.content {
+  display: "flex";
+  align-items: "stretch";
+  flex-direction: "column";
+}
